@@ -5,7 +5,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,6 +18,9 @@ body {
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+  max-width: 90%;
+  width: 500px;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -37,6 +40,7 @@ h2 {
   font-weight: bold;
   color: #ffffff;
   text-shadow: 0 0 10px red;
+  word-wrap: break-word;
 }
 
 #mensagemFinal {
@@ -58,4 +62,58 @@ h2 {
 @keyframes subir {
   0% { transform: translateY(0) rotate(-5deg); opacity: 1; }
   100% { transform: translateY(-120vh) rotate(15deg); opacity: 0.25; }
+}
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  #timer {
+    font-size: 2rem;
+  }
+
+  #mensagemFinal {
+    font-size: 1.4rem;
+  }
+
+  #balao {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+
+  #timer {
+    font-size: 1.8rem;
+  }
+
+  #mensagemFinal {
+    font-size: 1.2rem;
+  }
+
+  #balao {
+    font-size: 2.4rem;
+  }
 }

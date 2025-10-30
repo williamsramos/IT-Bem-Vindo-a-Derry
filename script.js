@@ -10,6 +10,7 @@ const episodioTituloEl = document.getElementById("episodioTitulo");
 
 // Lista de episódios
 const episodios = [
+  // Temporada 1
   { titulo: "Episódio 2 - Temp 1", data: "2025-10-31T22:00:00" },
   { titulo: "Episódio 3 - Temp 1", data: "2025-11-09T22:00:00" },
   { titulo: "Episódio 4 - Temp 1", data: "2025-11-16T22:00:00" },
@@ -17,6 +18,8 @@ const episodios = [
   { titulo: "Episódio 6 - Temp 1", data: "2025-11-30T22:00:00" },
   { titulo: "Episódio 7 - Temp 1", data: "2025-12-07T22:00:00" },
   { titulo: "Episódio 8 - Temp 1", data: "2025-12-14T22:00:00" },
+
+  // Temporada 2 (datas fictícias, ajuste conforme necessário)
   { titulo: "Episódio 1 - Temp 2", data: "2026-01-04T22:00:00" },
   { titulo: "Episódio 2 - Temp 2", data: "2026-01-11T22:00:00" },
   { titulo: "Episódio 3 - Temp 2", data: "2026-01-18T22:00:00" },
@@ -87,23 +90,3 @@ iniciarEpisodio(indiceAtual);
 
 
 
-// const episodios = [
-//   // Temporada 1
-//   { titulo: "Episódio 2 - Temp 1", data: "2025-10-31T22:00:00" },
-//   { titulo: "Episódio 3 - Temp 1", data: "2025-11-09T22:00:00" },
-//   { titulo: "Episódio 4 - Temp 1", data: "2025-11-16T22:00:00" },
-//   { titulo: "Episódio 5 - Temp 1", data: "2025-11-23T22:00:00" },
-//   { titulo: "Episódio 6 - Temp 1", data: "2025-11-30T22:00:00" },
-//   { titulo: "Episódio 7 - Temp 1", data: "2025-12-07T22:00:00" },
-//   { titulo: "Episódio 8 - Temp 1", data: "2025-12-14T22:00:00" },
-
-//   // Temporada 2 (datas fictícias, ajuste conforme necessário)
-//   { titulo: "Episódio 1 - Temp 2", data: "2026-01-04T22:00:00" },
-//   { titulo: "Episódio 2 - Temp 2", data: "2026-01-11T22:00:00" },
-//   { titulo: "Episódio 3 - Temp 2", data: "2026-01-18T22:00:00" },
-//   { titulo: "Episódio 4 - Temp 2", data: "2026-01-25T22:00:00" },
-//   { titulo: "Episódio 5 - Temp 2", data: "2026-02-01T22:00:00" },
-//   { titulo: "Episódio 6 - Temp 2", data: "2026-02-08T22:00:00" },
-//   { titulo: "Episódio 7 - Temp 2", data: "2026-02-15T22:00:00" },
-//   { titulo: "Episódio 8 - Temp 2", data: "2026-02-22T22:00:00" }
-// ];

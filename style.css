@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&display=swap');
 
+/* 🎈 ESTILO GERAL */
 body {
   background-color: #0a0a0a;
   color: #e0e0e0;
@@ -13,26 +14,34 @@ body {
   overflow: hidden;
   position: relative;
   cursor: url('https://www.freeiconspng.com/uploads/knife-icon-png-1.png'), auto;
-  background-image: url('itwelcometoderry.png'); /* Substitua pelo link da sua imagem */
+
+  /* 🩸 Imagem de fundo (It: Welcome to Derry) */
+  background-image: url('https://images8.alphacoders.com/140/thumb-1920-1402452.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll; /* ⚠️ evita bug no mobile */
 }
 
+/* 🔪 CONTAINER PRINCIPAL */
 .container {
-  background: rgba(255, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #ff0000;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
   max-width: 90%;
   width: 500px;
   box-sizing: border-box;
+  backdrop-filter: blur(3px);
 }
 
+/* 🔴 TÍTULOS */
 h1 {
   font-size: 2rem;
   color: #ff0000;
   margin-bottom: 10px;
+  text-shadow: 0 0 15px #ff0000;
 }
 
 h2 {
@@ -41,6 +50,7 @@ h2 {
   color: #ccc;
 }
 
+/* ⏰ TIMER */
 #timer {
   font-size: 2.5rem;
   font-weight: bold;
@@ -49,6 +59,7 @@ h2 {
   word-wrap: break-word;
 }
 
+/* 💀 MENSAGEM FINAL */
 #mensagemFinal {
   font-size: 1.8rem;
   color: #ff0000;
@@ -56,26 +67,18 @@ h2 {
   text-shadow: 0 0 10px #ff0000;
 }
 
-#balao {
-  position: absolute;
-  bottom: -100px;
-  font-size: 3.6rem;
-  animation: subir 8s linear infinite;
-  pointer-events: none;
-  opacity: 0.7;
-}
-
-@keyframes subir {
-  0% { transform: translateY(0) rotate(-5deg); opacity: 1; }
-  100% { transform: translateY(-120vh) rotate(15deg); opacity: 0.25; }
-}
-
-/* 📱 Responsividade */
+/* 📱 RESPONSIVIDADE */
 @media (max-width: 768px) {
+  body {
+    background-image: url('https://w0.peakpx.com/wallpaper/1017/667/HD-wallpaper-welcome-to-derry-2017-horror-it-movie-pennywhise.jpg');
+    background-position: top center;
+  }
+
   .container {
     padding: 30px 20px;
     width: 90%;
-    background: rgba(255, 0, 0, 0.2); /* fundo mais visível */
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #ff0000;
   }
 
   h1 {
@@ -93,16 +96,17 @@ h2 {
   #mensagemFinal {
     font-size: 1.4rem;
   }
-
-  #balao {
-    font-size: 2.8rem;
-  }
 }
 
 @media (max-width: 480px) {
+  body {
+    background-image: url('https://img.uhdpaper.com/wallpaper/pennywise-it-welcome-to-derry-60%405%40j-pc-4k.jpg');
+    background-position: center;
+  }
+
   .container {
     padding: 20px 15px;
-    background: rgba(255, 0, 0, 0.25); /* fundo ainda mais visível */
+    background: rgba(0, 0, 0, 0.75);
   }
 
   h1 {
@@ -119,9 +123,5 @@ h2 {
 
   #mensagemFinal {
     font-size: 1.2rem;
-  }
-
-  #balao {
-    font-size: 2.4rem;
   }
 }

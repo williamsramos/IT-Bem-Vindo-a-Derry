@@ -5,21 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🎈 IT: Bem-vindo a Derry - Contagem Regressiva</title>
 
-  <!-- Favicon de balão vermelho (SVG embutido) -->
+  <!-- Favicon de balão vermelho -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><ellipse cx='32' cy='22' rx='16' ry='18' fill='%23ff0000'/><path d='M32 39 C29 44,30 50,32 51 C34 50,35 44,32 39' fill='%23ff0000'/><path d='M32 42 L36 58' stroke='%23000000' stroke-width='1.2' stroke-linecap='round'/></svg>">
 
+  <!-- Fontes assustadoras -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&display=swap">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="container">
     <h1>🎈 Contagem Regressiva</h1>
     <h2 id="episodioTitulo">Próximo episódio</h2>
     <div id="timer">00d 00:00:00</div>
     <p id="mensagemFinal" style="display:none;">🎈 O episódio começou! 🎈</p>
+
+    <div id="trailer-container">
+      <iframe id="trailer" src="https://www.youtube.com/embed/K8BgHgL_pr8?autoplay=1&mute=1&loop=1&playlist=K8BgHgL_pr8" 
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <button onclick="unmuteYT()" style="margin-top:10px; padding:8px 16px; font-size:1rem;">🔊 Ouvir som</button>
   </div>
 
-  <div id="balao">🎈</div>
+  <!-- Balões -->
+  <div class="balloon" style="left:15%">🎈</div>
+  <div class="balloon" style="left:40%; animation-delay:3s;">🎈</div>
+  <div class="balloon" style="left:70%; animation-delay:6s;">🎈</div>
 
+<div class="trailer-container">
+  <div class="trailer-wrapper">
+    <iframe
+      id="trailer"
+      src="https://www.youtube.com/embed/K8BgHgL_pr8?autoplay=1&mute=1&loop=1&playlist=K8BgHgL_pr8&controls=0&modestbranding=1&playsinline=1"
+      title="Trailer IT: Welcome to Derry"
+      frameborder="0"
+      allow="autoplay; encrypted-media; fullscreen"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+
+
+
+  <!-- JS -->
   <script src="script.js"></script>
+
 </body>
 </html>

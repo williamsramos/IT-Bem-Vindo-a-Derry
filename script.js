@@ -39,7 +39,7 @@ function iniciarEpisodio(indice) {
     episodioTituloEl.textContent = "Novos episódios em breve...";
     timerEl.style.display = "none";
     mensagemEl.style.display = "block";
-    mensagemEl.textContent = "🎬 Fim da segunda temporada 🎈";
+    mensagemEl.textContent = "🎬 Fim da primeira temporada 🎈, em breve nova temporada";
     return;
   }
 

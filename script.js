@@ -39,7 +39,8 @@ function iniciarEpisodio(indice) {
     episodioTituloEl.textContent = "Novos episódios em breve...";
     timerEl.style.display = "none";
     mensagemEl.style.display = "block";
-    mensagemEl.textContent = "🎬 Fim da primeira temporada 🎈, em breve nova temporada";
+    mensagemEl.textContent = "🎬 Fim da primeira temporada 🎈";
+    mensagemEl.textContent = "🎬 Em breve nova temporada de It welcome to Derry 🎈";
     return;
   }
 

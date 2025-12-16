@@ -21,14 +21,14 @@ const episodios = [
  
 
   // Temporada 2 (datas fictícias, ajuste conforme necessário)
-  { titulo: "Episódio 1 - Temp 2", data: "2026-01-04T22:00:00" },
-  { titulo: "Episódio 2 - Temp 2", data: "2026-01-11T22:00:00" },
-  { titulo: "Episódio 3 - Temp 2", data: "2026-01-18T22:00:00" },
-  { titulo: "Episódio 4 - Temp 2", data: "2026-01-25T22:00:00" },
-  { titulo: "Episódio 5 - Temp 2", data: "2026-02-01T22:00:00" },
-  { titulo: "Episódio 6 - Temp 2", data: "2026-02-08T22:00:00" },
-  { titulo: "Episódio 7 - Temp 2", data: "2026-02-15T22:00:00" },
-  { titulo: "Episódio 8 - Temp 2", data: "2026-02-22T22:00:00" }
+  //{ titulo: "Episódio 1 - Temp 2", data: "2026-01-04T22:00:00" },
+ // { titulo: "Episódio 2 - Temp 2", data: "2026-01-11T22:00:00" },
+  //{ titulo: "Episódio 3 - Temp 2", data: "2026-01-18T22:00:00" },
+  //{ titulo: "Episódio 4 - Temp 2", data: "2026-01-25T22:00:00" },
+ // { titulo: "Episódio 5 - Temp 2", data: "2026-02-01T22:00:00" },
+ // { titulo: "Episódio 6 - Temp 2", data: "2026-02-08T22:00:00" },
+ // { titulo: "Episódio 7 - Temp 2", data: "2026-02-15T22:00:00" },
+  //{ titulo: "Episódio 8 - Temp 2", data: "2026-02-22T22:00:00" }
 ];
 
 let indiceAtual = 0;
